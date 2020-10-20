@@ -1,0 +1,33 @@
+.episode {
+    border-left: 5px solid #111;
+    padding-left: 10px;
+}
+
+
+
+img{
+    border-radius: 10px;
+    vertical-align: middle;
+    border: 0;
+    margin-top: 15px;
+
+}
+.media-heading{
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+h2{
+    font-size: 35px;
+
+}
+.media-left, .media-right, .media-body {
+    display: table-cell;
+    vertical-align: top;
+}
+.media-body {
+    width: 10000px;
+}
+.media, .media-body {
+    zoom: 1;
+    overflow: hidden;
+}

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>sign up</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!--<script src="./jquary/jquery-3.5.1.js"></script>-->
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="./css/styleHome.css" />
+    <style></style>
+    <script>
+      function validation() {
+        var myName = document.forms["RegForm"]["name"];
+        var myEmail = document.forms["RegForm"]["email"];
+
+        var myPassword= document.forms["RegForm"]["password"];
+
+        if (myName.value == "") {
+          document.getElementById("name-valid").innerHTML =
+            "pleace enter your name";
+            document.getElementById("name-valid").style.color="red";
+          // name.focus();
+          return false;
+        }
+
+        if (myName.value == " ") {
+          document.getElementById("email-valid").innerHTML =
+            "Your email address is required.";
+            document.getElementById("email-valid").style.color="red";
+          // email.focus();
+          return false;
+        }
+
+        if (myEmail.value.indexOf("@", 0) < 0) {
+          document.getElementById("email-valid").innerHTML =
+            "you email address it invalid.";
+            document.getElementById("email-valid").style.color="red";
+          // email.focus();
+          return false;
+        }
+
+        if (myEmail.value.indexOf(".", 0) < 0) {
+          document.getElementById("email-valid").innerHTML =
+            "you email address it invalid.";
+            document.getElementById("email-valid").style.color="red";
+          // email.focus();
+          return false;
+        }
+        if (myPassword.value == " ") {
+          document.getElementById("password-valid").innerHTML =
+            "Password is required.";
+            document.getElementById("password-valid").style.color="red";
+          // password.focus();
+          return false;
+        }
+        if (myPassword.value.length < 8) {
+          document.getElementById("password-valid").innerHTML =
+            "Password is Atleast 8 characters Must type";
+            document.getElementById("password-valid").style.color="red";
+          // password.focus();
+          return false;
+        }
+        if (myPassword.value.search(/[0-9]/) == -1) {
+          document.getElementById("password-valid").innerHTML =
+            "Password is Atleast 1 Numeric character type";
+            document.getElementById("password-valid").style.color="red";
+          // password.focus();
+          return false;
+        }
+        if (myPassword.value.search(/[a-z]/) == -1) {
+          document.getElementById("password-valid").innerHTML =
+            "Password is Atleast 1 simple character type";
+            document.getElementById("password-valid").style.color="red";
+          // password.focus();
+          return false;
+        }
+        if (myPassword.value.search(/[A-Z]/) == -1) {
+          document.getElementById("password-valid").innerHTML =
+            "Password is Atleast 1 capital letter type";
+            document.getElementById("password-valid").style.color="red";
+          // password.focus();
+          return false;
+        }
+        if (myPassword.value.search(/[!\@\#\$\%\^\&\*\(\)\_\+\?\>\<\.]/) == -1) {
+          document.getElementById("password-valid").innerHTML =
+            "Password is Atleast 1 special symbol type";
+            document.getElementById("password-valid").style.color="red";
+          // password.focus();
+          return false;
+        }
+        return true;
+      }
+    </script>
+    <style>
+      .input-icon i {
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <!--nav bar-->
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a
+            class="navbar-brand"
+            style="color: black; padding: 15px; background-color: yellow;"
+            >Show<strong>Trackr</strong></a
+          >
+        </div>
+        <ul class="nav navbar-nav">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a href="Add.html">Add</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="login.html"><span></span>Login </a>
+          </li>
+          <li class="nav-item active">
+            <a href="sign_up.html"><span></span>Sign Up</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!--end-->
+
+    <div class="container">
+     
+        <div class="row">
+          <div class="col" style="margin-left: 350px;">
+            <div>
+              <h2 class="text-center">
+                Sign Up
+              </h2>
+              <form name="RegForm" method="post" action=" " onsubmit="return validation()"> 
+                <p id="name-valid"></p>
+              <input
+                type="text"
+                name="aame"
+                placeholder="Name"
+                id="myName"
+                style="border-style: solid; border-color: gray;"
+              />
+              
+            </div>
+            <div class="inpit-icon">
+              <div class="form-group">
+
+                <i class="fa fa-user icon" style="padding: 10px 3px;"></i>
+                <p id="email-valid"></p>
+                <input
+                  type="text"
+                  name="email"
+                  placeholder="Email"
+                  id="myEmail"
+                  style="border-style: solid; border-color: gray;"
+                />
+              
+              </div>
+
+              <div>
+                <p id="password-valid"></p>
+                <input
+                  type="password"
+                  name="password"
+                  placeholder="Password"
+                  id="myPassword"
+                  style="border-style: solid; border-color: gray;"
+                />
+              </div>
+            </div>
+            <!--aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa-->
+
+            <!--hhhhhhhhhhhhhhhhh-->
+
+            <div class="Log_text">
+              <p style="text-align: center;">
+                By clickking on Sign up you agree to
+                <b>terms & <br />conditions</b> and <b> privacy policy</b>
+              </p>
+            </div>
+
+            <input
+              style="background-color: dodgerblue;"
+              type="submit"
+              
+              value="Sign up"
+            />
+            
+            <p style="text-align: center;">
+              Already have an account?<b><a href="login.html">Log in now</a></b>
+            </p>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

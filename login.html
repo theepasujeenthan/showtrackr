@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+  
+    
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/styleHome.css">
+
+    <!--validation-->
+    
+<script>
+
+$(document).ready(function() {
+    var user1={
+        name:"malathy",
+        email: "malathy@gmail.com",
+        password:"abcd1234"
+    };
+
+    var user2={
+        name:"kalaimathy",
+         email: "kalaimathy@gmail.com",
+        password:"bcde1234"
+    };
+
+    var user3={
+        name:"karan",
+         email: "karan@gmail.com", 
+         password:"cdef1234"
+    };
+
+    var user4={
+        name:"kavitha",
+         email: "kavitha@gmail.com", 
+         password:"defg1234"
+    };
+
+    var user5={
+       name:"vathana",
+         email: "vathana@gmail.com", 
+         password:"efgh1234"
+    };
+
+    var AllUsers=[user1,user2,user3,user4,user5];
+
+    $("#validation").submit(function(){
+        var myEmail=$("#myEmail").val();
+        var mypassword=$("#mypassword").val();
+        var LogEmail=false;
+        var Logpassword=false;
+        if(myEmail.length>3 && mypassword.length>5){
+
+        //cheack 
+        for(var i=0;i<AllUsers.length;i++){
+            if(myEmail==AllUsers[i]['email']){
+                LogEmail=true;
+            }    
+            if(mypassword== AllUsers[i] ['password']){
+                Logpassword=true;
+            }  
+              }
+              if(LogEmail===true && Logpassword===true){
+                  alert("success");
+                  return true;
+              }
+              else{
+                  alert("unsucessful");
+              }
+                  return false;
+              }
+        else{
+          alert("unsucessful");
+          return false;
+        }
+        
+    });
+});
+
+ 
+</script>
+
+<!-----------validation----------------------->
+
+
+  </head>
+  <body>
+<!--nav bar-->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" style="color: black; padding: 15px; background-color: yellow;" href="#">Show<strong>Trackr</strong></a>
+    </div>
+    <ul class="nav navbar-nav" >
+      <li><a class="nav-link" href="index.html">Home</a></li>
+     <li><a href="Add.html">Add</a></li>
+        </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="nav-item active"><a href="login.html"><span></span>Login </a></li>
+      <li><a href="sign_up.html"><span ></span>Sign Up</a></li>
+    </ul>
+  </div>
+</nav>
+<!--end-->
+
+    <div class="container">
+      <form id="validation">
+        <div class="row">
+          
+         <div class="col" style="margin-left: 350px;">
+          <h2 style="text-align: center;">Log in</h2>
+
+          <div class="log_group">
+       <input type="email"  placeholder="@ Email" id="myEmail" style="border-style: solid; border-color: gray;">
+           </div>
+
+
+           
+
+           <div class="log_group">
+             <input type="password" placeholder="Password" id="mypassword" style="border-style: solid; border-color: gray;">
+          </div>
+          <div>
+          <input type="submit"  value="Login" />
+        </div>
+          </form>
+
+          <div class="Log_text">
+
+          <h4 style="text-align: center;">Forgot your password?</h4>
+          <p style="text-align: center;">Don't have an account yet?<b><a href="sign_up.html">Sign up</a></b></p>
+          <div><p style="text-align: center;"> or</p></div>
+            
+         <div><a href="#" class="fb btn" ><i class="fa fa-facebook fa-fw"></i> 
+          Login with Facebook</a></div>
+          <div>
+          <a href="#" class="google btn"><i class="fa fa-google fa-fw"> </i> Sign in with Google</a>
+        </div>
+        </div>
+            
+          </div>
+
+       
+           
+          
+
+    
+  </body>
+</html>

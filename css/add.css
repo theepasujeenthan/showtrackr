@@ -1,0 +1,253 @@
+body{
+
+font-family: "Open Sans", sans-serif;
+font-size: 14px;
+line-height: 1.42857;
+color: #333333;
+background-color: #e4e7ec;
+}
+/*
+.heading{
+padding: 10px 15px;
+border-bottom: 1px solid transparent;
+border-top-right-radius: 3px;
+border-top-left-radius: 3px;
+
+}*/
+/*nav*/
+.navbar-inverse{
+  background-color: whitesmoke;
+  color: black;
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus,
+ .navbar-inverse .navbar-nav>.active>a:hover {
+  color:black;
+  background-color:lightgrey;
+  border-style: dotted;
+  border-color: gray;
+}
+.navbar-brand{
+  background-color:yellow; 
+  color: black;}
+
+.navbar {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+}
+/**/
+
+.container{
+  background-color: #f6f6f6;
+  margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+.btn {
+  border-radius: 2px;
+}
+.btn-primary {
+  color: #fff;
+  background-color: #1d7cf4;
+  border-color: #0e74f3;
+}
+.btn {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857;
+  margin-left: 18px;
+  margin-bottom: 10px;
+
+}
+.heading{
+  margin-left: 23px;
+  margin-top: 10px;
+}
+h5{
+  margin-left: 18px;
+}
+.All-p > .heading {
+  color: #444;
+  border-color: #cfd9db;
+  font-weight: bold;
+  font-size: 85%;
+  text-transform: uppercase;
+  background-color: #f6f6f6;
+  background-color: #f6f6f6;
+}
+/*ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+  }
+  
+  li {
+    float: left;
+  }*/
+  /*
+  li:last-child {
+    border-right: none;
+  }
+  
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  body {
+    background-color:#bec1c6;
+  }
+
+  /*tv show
+  div.tvShow1{
+    background-color:#e4e8e9;
+    text-align: center;
+  }
+  div.tvShow2{
+    background-color:#e4e8e9;
+    text-align: center;
+    max-width:80%;
+    margin: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.19);
+  }
+  div.tvShow3{
+    background-color:#f1f1f1;
+    text-align: center;
+    max-width:80%;
+    margin: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  button.bu_Add{
+    background-color: #7e94eb;
+    color: white;
+    opacity: 100%;
+    border: 1px;
+    padding: 10px 25px;
+    margin-left: 20px;
+  }*/
+
+  /*AAAAddd*/
+
+  /*show
+  .columns {
+    float: left;
+    width: 70%;
+    padding: 20px;
+    text-align: left;
+  }
+  .column {
+    float: left;
+    width: 20%;
+    padding: 20px;
+  }*/
+/*
+  div.login{
+    background-color:#f1f1f1;
+    text-align: center;
+    max-width:80%;
+    margin-top: 7%;
+    margin-left: 35%;
+    margin-right: 35%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.19);
+  }
+  div.s4{
+    background-color:#e4e8e9;
+    text-align: center;
+    max-width:80%;
+    margin: auto;
+  }
+  a {
+    text-decoration: none;
+    color:#717478;
+  }
+  button{
+    background-color:#bcc8da;
+    color: black;
+    opacity: 0.5;
+    border: 0;
+    margin-left: 2px;
+  }
+
+  button.login{
+    background-color: lightgreen;
+    color: white;
+    opacity: 100%;
+    border: 1px;
+    width: 90%;
+    height: 30px;
+  }
+  button.signup{
+    background-color:#7e94eb;
+    color: white;
+    opacity: 100%;
+    border: 1px;
+    width: 90%;
+    height: 30px;
+  }
+  .gab{
+    margin-top:5px;
+  }
+  img{
+    width: 200px;
+    height: 350px;
+    margin: 10px;
+    border-radius: 10px;
+  }
+  img.logo{
+    width: 200px;
+    height: 30px;
+    margin: 10px;
+  }
+  .column {
+    float: left;
+    width: 20%;
+    padding: 20px;
+  }
+  .columns {
+    float: left;
+    width: 70%;
+    padding: 20px;
+    text-align: left;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+ 
+  input[type=text.home]{
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+   */
+  input[type=text]{
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }

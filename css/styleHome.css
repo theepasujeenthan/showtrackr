@@ -1,0 +1,62 @@
+body{
+
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #333333;
+  background-color: #e4e7ec;
+  }
+
+
+
+.my_link {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size:large;
+  
+}
+.btn-secondary {
+  margin-bottom: 10px;
+  font-size:small;
+
+}
+.btn-secondary :hover {
+    background-color: darkslategray;
+}
+
+/*movie title*/
+
+/*nav*/
+.navbar-inverse{
+  background-color: whitesmoke;
+  color: black;
+  box-shadow: 1px 1px 1px 1px grey;
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+  color:black;
+  background-color:lightgrey;
+  border-style: dotted;
+  border-color: gray;
+  box-shadow: 1px 1px 2px 2px grey;
+}
+ 
+  
+.navbar {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+}/*
+
+/*footer*/
+#main-footer{
+  text-align: center;
+  background:gray;
+  color: #fff;
+  padding: 20px;
+  font-size:18px;
+  font-weight: bold;
+}
+
+
+ 

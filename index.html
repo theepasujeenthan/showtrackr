@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Show tracker home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ 
+  
+  <link rel="stylesheet" href="./css/styleHome.css">
+<!--AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA-->
+<script>
+  function myFunction() {
+      var input, filter, ul, li, a, i, txtValue;
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      ul = document.getElementById("myUL");
+      li = ul.getElementsByTagName("li");
+      for (i = 0; i < li.length; i++) {
+          a = li[i].getElementsByTagName("a")[0];
+          txtValue = a.textContent || a.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              li[i].style.display = "";
+          } else {
+              li[i].style.display = "none";
+          }
+      }
+  }
+  </script>
+
+  <!--ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ-->
+  
+</head>
+<body>
+<!--nav bar-->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" style="color: black; padding: 15px; background-color: yellow;">Show<strong>Trackr</strong></a>
+    </div>
+    <ul class="nav navbar-nav" >
+      <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+     <li><a href="Add.html">Add</a></li>
+        </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="login.html"><span></span>Login </a></li>
+      <li><a href="sign_up.html"><span ></span>Sign Up</a></li>
+    </ul>
+  </div>
+</nav>
+<!--end-->
+<!--A TO Z-->
+<div class="my_link">
+    <a class="letter" href="#">0-9</a>  <a class="letter" href="#">A</a>  <a class="letter" href="#">B</a>  <a class="letter" href="#">C</a>  <a class="letter" href="#">D</a> <a class="letter" href="#">E</a>   <a class="letter" href="#">F</a>  <a class="letter" href="#">G</a>
+    <a class="letter" href="#">H</a>    <a class="letter" href="#">I</a>  <a class="letter" href="#">J</a>  <a class="letter" href="#">K</a>  <a class="letter" href="#">K</a>  <a class="letter" href="#">L</a>  <a class="letter" href="#">M</a>
+    <a class="letter" href="#">N</a>    <a class="letter" href="#">O</a>  <a class="letter" href="#">P</a>  <a class="letter" href="#">Q</a>  <a class="letter" href="#">R</a>  <a class="letter" href="#">S</a>  <a class="letter" href="#">T</a>
+    <a class="letter" href="#">U</a>    <a class="letter" href="#">V</a>  <a class="letter" href="#">W</a>  <a class="letter" href="#">X</a>  <a class="letter" href="#">Y</a>  <a class="letter" href="#">Z</a>
+</div>
+<!--end-->
+
+<!--show button-->
+<div class="container">
+<button type="button" class="btn btn-secondary">Action</button>
+<button type="button" class="btn btn-secondary">Adventure</button>
+<button type="button" class="btn btn-secondary">Animation</button>
+<button type="button" class="btn btn-secondary">Children</button>
+<button type="button" class="btn btn-secondary">Comedy</button>
+<button type="button" class="btn btn-secondary">Crime</button>
+<button type="button" class="btn btn-secondary">Documentary</button>
+<button type="button" class="btn btn-secondary">Drama</button>
+<button type="button" class="btn btn-secondary">Family</button>
+<button type="button" class="btn btn-secondary">Fantasy</button>
+<button type="button" class="btn btn-secondary">Food</button>
+<button type="button" class="btn btn-secondary">Home and Garden</button>
+<button type="button" class="btn btn-secondary">Horror</button>
+<button type="button" class="btn btn-secondary">Mini-Series</button>
+<button type="button" class="btn btn-secondary">Mystery</button>
+<button type="button" class="btn btn-secondary">News</button>
+<button type="button" class="btn btn-secondary">Reality</button>
+<button type="button" class="btn btn-secondary">Romance</button>
+<button type="button" class="btn btn-secondary">Sci-Fi</button>
+<button type="button" class="btn btn-secondary">Sport</button>
+<button type="button" class="btn btn-secondary">Suspens</button>
+<button type="button" class="btn btn-secondary">Talk Show</button>
+<button type="button" class="btn btn-secondary">Thriller</button>
+<button type="button" class="btn btn-secondary">Travel</button>
+</div>
+<!--end-->
+
+  
+ 
+
+
+  
+<section id="gallery" >
+    <div class="container" style="box-shadow: 1px 1px 2px 2px grey;">
+
+      <div class="col-sm-12">
+        
+        
+        <div class="panel-heading panel panel-default" id="addshow">
+        <div class="panel-heading panel panel-default" id="top">TOP 12 SHOW  <input style="margin-left:750px;" type="text" placeholder="Search.." id="showcha"></div>
+        
+        
+        
+      <div class="row">
+      <div class="col-sm-4 col-md-3">
+      <div class="card">
+        <a href="show-details.html">  <img src="./images/G img_1.jpg" alt="" class="card-img-top">  <a>
+        <div class="card-body" style="text-align: center;">
+          <h5 class="card-title"><a href="show-details.html">Game of Thrones</h5></a>
+          <p class="card-text" style="color:gray;"><a href="show-details.html">Episodes 84</p></a>
+        </div>
+       </div>
+      </div>
+
+
+    <div class="col-xs-4 col-md-3">
+    <div class="card">
+        <a href="show-2.html"><img src="./images/B img_2.jpg" alt="" class="card-img-top"></a>
+        <div class="card-body" style="text-align: center;">
+            <h5 class="card-title"><a href="show-2.html">Breaking Bad</a></h5>
+            <p class="card-text" style="color:gray;"><a href="show-2.html">Episodes 79</p></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-4 col-md-3">
+      <div class="card">
+       <a href="show-3.html"> <img src="./images/Dd img_3.jpg" alt="" class="card-img-top" ></a>
+        <div class="card-body" style="text-align: center;">
+            <h5 class="card-title"><a href="show-3.html">Dexter</a></h5>
+            <p class="card-text" style="color:gray;"><a href="show-3.html">Episodes 125</p></a>
+          </div>
+       </div>
+      </div>
+
+      <div class="col-xs-4 col-md-3">
+        <div class="card">
+        <a href="show-4.html">  <img src="./images/H h img_4.jpg"  alt="" class="card-img-top"></a>
+          <div class="card-body" style="text-align: center;">
+            <h5 class="card-title"><a href="show-4.html">How I Meet your Mother</a></h5>
+            <p class="card-text" style="color:gray;"><a href="show-4.html">Episodes 219</p></a>
+          </div>
+         </div>
+        </div>
+
+        <div class="col-xs-4 col-md-3">
+            <div class="card">
+              <img src="./images/B img_5.jpg" alt="" class="card-img-top" >
+              <div class="card-body" style="text-align: center;">
+                  <h5 class="card-title">Big Bang</h5>
+                  <p class="card-text" style="color:gray;">Episodes 225</p>
+                </div>
+             </div>
+            </div>
+
+            <div class="col-xs-4 col-md-3">
+                <div class="card">
+                  <img src="./images/F img_6.jpg" alt="" class="card-img-top" >
+                  <div class="card-body" style="text-align: center;">
+                      <h5 class="card-title">Friends</h5>
+                      <p class="card-text" style="color:gray;">Episodes 135</p>
+                    </div>
+                 </div>
+                </div>
+
+                <div class="col-xs-4 col-md-3">
+                    <div class="card">
+                      <img src="./images/H img_7.jpg" alt="" class="card-img-top" >
+                      <div class="card-body" style="text-align: center;">
+                          <h5 class="card-title">House of code</h5>
+                          <p class="card-text" style="color:gray;">Episodes 155</p>
+                        </div>
+                     </div>
+                    </div>
+
+                    <div class="col-xs-4 col-md-3">
+                        <div class="card">
+                          <img src="./images/D img_8.jpg" alt="" class="card-img-top" >
+                          <div class="card-body" style="text-align: center;">
+                              <h5 class="card-title">Dexter</h5>
+                              <p class="card-text" style="color:gray;">Episodes 195</p>
+                            </div>
+                         </div>
+                        </div>
+
+                        <div class="col-xs-4 col-md-3">
+                            <div class="card">
+                              <img src="./images/K img_9.jpg" alt="" class="card-img-top" >
+                              <div class="card-body" style="text-align: center;">
+                                  <h5 class="card-title">King Julie</h5>
+                                  <p class="card-text" style="color:gray;">Episodes 165</p>
+                                </div>
+                             </div>
+                            </div>
+
+                            <div class="col-xs-4 col-md-3">
+                                <div class="card">
+                                  <img src="./images/N img_10.jpg" alt="" class="card-img-top" >
+                                  <div class="card-body" style="text-align: center;">
+                                      <h5 class="card-title">Number</h5>
+                                      <p class="card-text" style="color:gray;">Episodes 225</p>
+                                    </div>
+                                 </div>
+                                </div>
+
+                                <div class="col-xs-4 col-md-3">
+                                    <div class="card">
+                                      <img src="./images/o img_11.jpg" alt="" class="card-img-top" >
+                                      <div class="card-body" style="text-align: center;">
+                                          <h5 class="card-title">Office</h5>
+                                          <p class="card-text" style="color:gray;">Episodes 425</p>
+                                        </div>
+                                     </div>
+                                    </div>
+
+                                    <div class="col-xs-4 col-md-3">
+                                        <div class="card">
+                                          <img src="./images/M img_12.jpg" alt="" class="card-img-top" >
+                                          <div class="card-body" style="text-align: center;">
+                                              <h5 class="card-title">Modern Family</h5>
+                                              <p class="card-text" style="color:gray;">Episodes 127</p>
+                                            </div>
+                                         </div>
+                                        </div>
+                                        
+
+    </div>
+  </div>
+</div>
+  </section>
+  <div class="container" >
+  <ul class="pagination" style="margin-left: 350px;">
+    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">4</a></li>
+    <li class="page-item"><a class="page-link" href="#">5</a></li>
+    <li class="page-item"><a class="page-link" href="#">6</a></li>
+    <li class="page-item"><a class="page-link" href="#">7</a></li>
+    <li class="page-item"><a class="page-link" href="#">8</a></li>
+    <li class="page-item"><a class="page-link" href="#">9</a></li>
+    <li class="page-item"><a class="page-link" href="#">10</a></li>
+    <li class="page-item"><a class="page-link" href="#">11</a></li>
+    <li class="page-item"><a class="page-link" href="#">12</a></li>
+    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+  </ul>
+  </div>
+
+   <!---->
+  <footer id="main-footer">
+    <p>Show Trackr &copy;2020 All Rights Reserved created by pratheepa</p>
+    
+</footer>
+
+
+</body>
+</html>
